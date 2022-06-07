@@ -25,3 +25,7 @@ const countDeafRats = town => [...town.replace(/ +/g, '')].reduce((a, c, i) => a
 console.log(countDeafRats("~O~O~O~O P"))
 console.log(countDeafRats("P O~ O~ ~O O~"))
 console.log(countDeafRats1("~O~O~O~OP~O~OO~"))
+
+const d = false;
+const df = d ?? 54
+console.log(df)
