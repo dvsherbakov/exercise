@@ -51,7 +51,6 @@ enum Berries {
     Strawberry = 1, Raspberry, Blueberry = 4, CherryPy
 }
 
-
 const berry = Berries["Blueberry"]
 console.log(berry)
 //console.log(Berries[1])
@@ -64,3 +63,5 @@ for (const st in Stones) {
     console.log(st, Stones[st])
 
 }
+
+console.log(typeof Berries)
