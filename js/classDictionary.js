@@ -1,4 +1,14 @@
 class Dictionary {
+
+  static sData = ['poder', 'noder', 42]
+  constructor() {
+    this.pData = ['login', 42, false, null]
+  }
+
+  static testThis() {
+    console.log(this.sData)
+  }
+
   newEntry(key, value) {
     this[key] = value
   }
@@ -7,6 +17,8 @@ class Dictionary {
     return this[key] || `Can't find entry for ${key}`
   }
 }
+
+Dictionary.testThis()
 
 const
   d = new Dictionary
@@ -19,3 +31,4 @@ d
 
 console.log(d.look('Apple',),'A fruit')
 console.log(d.look('Ball'), 'Can\'t find entry for Ball')
+console.log(d.pData, Dictionary.sData)
