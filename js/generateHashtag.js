@@ -12,3 +12,6 @@ console.log(generateHashtag('code' + ' '.repeat(140) + 'wars') === '#CodeWars')
 console.log(generateHashtag('Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat') === false, 'Should return false if the final word is longer than 140 chars.')
 console.log(generateHashtag('a'.repeat(139)) === '#A' + 'a'.repeat(138), 'Should work')
 console.log(generateHashtag('a'.repeat(140)) === false, 'Too long')
+
+//The marketing team is spending way too much time typing in hashtags.
+// Let's help them with our own Hashtag Generator!
