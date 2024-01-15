@@ -7,4 +7,4 @@ function addingShifted (arr, shift) {
 
 console.log('result:', addingShifted([[1, 2, 3, 4, 5, 6], [7, 7, 7, -7, 7, 7],[1, 1, 1, 1, 1, 1]], 3))
 
-//expected = [ 1, 2, 3, 11, 12, 13, 7, 7, 7];
+expected = [ 1, 2, 3, 11, 12, 13, 7, 7, 7];
