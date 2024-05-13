@@ -6,14 +6,19 @@ const fourDivide = (min, max) => {
   let bMin = Math.ceil(min * (10 ** pre))
   let bMax = Math.ceil(max * (10 ** pre))
   while (borderCondition(bMin, max)) --bMin
-  while (borderCondition(bMax, max)) ++bMax
+  //while (borderCondition(bMax, max)) ++bMax
   const dif = (bMax - bMin)
   let tic = Math.floor(dif / (4))
   if (tic > 2) while (tic % 5 !== 0) ++tic
+  if (bMax>(bMin + 4 * tic)) {
+    tic = Math.ceil(dif / (4))
+    if (tic > 2) while (tic % 5 !== 0) ++tic
+  }
+
   tic = tic / (10 ** pre)
   min = bMin / (10 ** pre)
   //max = bMax / (10 ** pre)
-  return { tic, min, max: Math.max(Math.round((min + 4 * tic) * 10000) / 10000, max) }
+  return { tic, min, max:Math.round((min + 4 * tic) * 10000) / 10000 }
 }
 
 
