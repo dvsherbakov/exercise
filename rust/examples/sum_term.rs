@@ -17,10 +17,7 @@ mod tests {
 
     fn test(input: u32, expected: &str) {
         let actual = series_sum(input);
-        assert!(
-            actual == expected,
-            "Expected series_sum({input}) to be {expected}, but was {actual}"
-        );
+        assert_eq!(actual, expected, "Expected series_sum({input}) to be {expected}, but was {actual}");
     }
 
     #[test]

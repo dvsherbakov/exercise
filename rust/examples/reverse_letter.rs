@@ -15,8 +15,7 @@ mod tests {
 
     fn dotest(s: &str, expected: &str) {
         let actual = reverse_letters(s);
-        assert!(actual == expected,
-                "With s = \"{s}\"\nExpected \"{expected}\" but got \"{actual}\"")
+        assert_eq!(actual, expected, "With s = \"{s}\"\nExpected \"{expected}\" but got \"{actual}\"")
     }
 
     #[test]

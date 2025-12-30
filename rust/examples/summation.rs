@@ -3,6 +3,7 @@
 fn main () {
     let s = summation(8);
     println!("{}", s);
+    println!("{}", summation2(18));
 }
 
 fn summation2(n: i32) -> i32 {
